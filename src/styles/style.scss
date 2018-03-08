@@ -1,10 +1,23 @@
-.container{
-  margin: 15px;
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+:root{
+  --mainColor: #DA322A;
+  --secondColor: #751B19;
+}
+
+.jumbotron.jumbotron-fluid{
+  background-color: var(--mainColor);
+  color:#fff;
+}
+
+a.btn.btn-primary.btn-lg{
+  background-color: var(--secondColor);
+  border-color:var(--mainColor);
 }
 
 .grid{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   // grid-template-rows: auto;
   grid-auto-rows: minmax(100px, auto);
   grid-gap: 1em;

@@ -5,5 +5,10 @@
   "main": "index.html",
   "repository": "https://github.com/BliztRipper/AscendDesignSystem.git",
   "author": "ARNON TAWONG",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "aos": "^2.2.0",
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1"
+  }
 }
