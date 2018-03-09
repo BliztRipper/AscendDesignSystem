@@ -1,0 +1,12 @@
+@media(max-width:768px){
+  .sidebar{
+    opacity: 0;
+  }
+  .wrapper-content{
+    transition: 200ms;
+    padding-left: 0;
+  }
+  img.menu-bars {
+    opacity: 1;
+  }
+}

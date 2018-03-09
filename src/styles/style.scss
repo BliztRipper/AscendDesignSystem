@@ -3,16 +3,52 @@
 :root{
   --mainColor: #DA322A;
   --secondColor: #751B19;
+  --sidebarSpace: 150px;
 }
 
-.jumbotron.jumbotron-fluid{
+.jumbotron{
   background-color: var(--mainColor);
   color:#fff;
+  border-radius: 0;
+  position:relative;
 }
 
 a.btn.btn-primary.btn-lg{
   background-color: var(--secondColor);
   border-color:var(--mainColor);
+}
+
+.sidebar{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  padding-top: 20px;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+  background-color: #fff;
+  width: var(--sidebarSpace);
+  transition: 200ms;
+  &.active{
+    opacity: 1;
+  }
+  ul {
+    list-style: none;
+    padding-left: 20px;
+  }
+}
+
+.wrapper-content{
+  padding-left: var(--sidebarSpace);
+}
+
+img.menu-bars{
+  transition: 200ms;
+  cursor:pointer;
+  position: absolute;
+  top:10px;
+  right: 20px;
+  opacity: 0;
 }
 
 .grid{
@@ -65,3 +101,5 @@ a.btn.btn-primary.btn-lg{
     }
   }
 }
+
+@import 'responsive'; 
