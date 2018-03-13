@@ -103,4 +103,43 @@ img.menu-bars{
   }
 }
 
+.grid-area{
+  display: grid;
+  grid-gap: 0.5em;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas: 
+  "sec1 sec1 sec1 sec2"
+  "sec3 sec5 sec5 sec2"
+  "sec3 sec4 sec4 sec4";
+  &__section1{
+    grid-area: sec1;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: steelblue;
+  }
+  &__section2 {
+    @extend .grid-area__section1;
+    grid-area: sec2;
+    background-color: seagreen;
+  }
+  &__section3 {
+    @extend .grid-area__section1;
+    grid-area: sec3;
+    background-color: salmon
+  }
+  &__section4 {
+    @extend .grid-area__section1;
+    grid-area: sec4;
+    background-color: violet;
+  }
+  &__section5 {
+    @extend .grid-area__section1;
+    grid-area: sec5;
+    background-color: gold;
+  } 
+}
+
 @import 'responsive'; 
