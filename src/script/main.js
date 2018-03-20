@@ -9,5 +9,8 @@ $('img.menu-bars').click(function () {
 })
 
 $(function () {
-  $('.lazy-load').lazy();
+  $('.lazy-load').lazy({
+    enableThrottle: true,
+    throttle: 200
+  });
 });
