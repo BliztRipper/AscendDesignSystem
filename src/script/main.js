@@ -13,4 +13,4 @@ $(function () {
     enableThrottle: true,
     throttle: 200
   });
-});
+}); 
