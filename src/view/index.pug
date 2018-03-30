@@ -1,71 +1,12 @@
 extends _template
 block body
-  section
-    .sidebar
-      nav
-        ul
-          li: a(href='') iOS
-          li: a(href='') Android
-          li: a(href='') Web
-  .wrapper-content         
-    section       
-      .jumbotron
-        img.menu-bars(src='images/menu-bars.svg')
-        .container
-          h1.display-4 Ascend Design System Guideline
-          p.lead
-          hr.my-4
-          p.lead This is a design patterns from Ascend Customer Experience Team.
-          a.btn.btn-primary.btn-lg(href='#', role='button') Explore More
-      .container
-        .row
-          .col
-            .card
-              img.card-img-top(src='http://fakeimg.pl/250x100/')
-              .card-body
-                h5.card-title Title
-                p.card-text Some quick example text to build on the card title and make up
-                a.btn.btn-primary(href='#') Learn More
-          .col      
-            .card
-              img.card-img-top(src='http://fakeimg.pl/250x100/')
-              .card-body
-                h5.card-title Title
-                p.card-text Some quick example text to build on the card title and make up
-                a.btn.btn-primary(href='#') Learn More
-          .col      
-            .card
-              img.card-img-top(src='http://fakeimg.pl/250x100/')
-              .card-body
-                h5.card-title Title
-                p.card-text Some quick example text to build on the card title and make up
-                a.btn.btn-primary(href='#') Learn More
-    section
-      .container
-        .grid.pt-4
-          .grid__header This is Header
-          .grid__sidebar This is Sidebar
-          .grid__content
-            .grid__content--item Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            .grid__content--item Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            .grid__content--item Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            .grid__content--item Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            .grid__content--item Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            .grid__content--item Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            .grid__content--item Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            .grid__content--item Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          .grid__footer This is Footer
-    section
-      .container
-        .grid-area.pt-4
-          .grid-area__section1 Section1
-          .grid-area__section2 Section2
-          .grid-area__section3 Section3
-          .grid-area__section4 Section4
-          .grid-area__section5 Section5      
-    section
-      .container
-        .row
-          .col-12.py-2: img.img-fluid.lazy-load(data-src="http://unsplash.it/1920x1080", alt="")
-          .col-12.py-2: img.img-fluid.lazy-load(data-src="http://unsplash.it/820x634", alt="")
-          .col-12.py-2: img.img-fluid.lazy-load(data-src="http://unsplash.it/800x600", alt="")   
+  .wrapper
+    section#hero
+      .parallax
+        img.logo(src="images/logo.png", alt="Logo", srcset="images/logo@2x.png 2x,images/logo@3x.png 3x")
+        header
+          h1#hero_title Design Sprint
+  section#main
+    .container
+      h2 What is ASCEND Design Sprint?
+      p What is ASCEND Design Sprint?
