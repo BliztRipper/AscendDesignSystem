@@ -3,23 +3,31 @@
 :root{
   --mainColor: #DA322A;
   --secondColor: #751B19;
-  --sidebarSpace: 100px;
-  // padding: constant(safe-area-inset-top) constant(safe-area-inset-right) constant(safe-area-inset-bottom) constant(safe-area-inset-left);
+  --bgColor: #252525;
+  padding: constant(safe-area-inset-top) constant(safe-area-inset-right) constant(safe-area-inset-bottom) constant(safe-area-inset-left);
 }
 body{
   font-family: -apple-system, BlinkMacSystemFont, //Safari Mac/iOS, Chrome
   'Segoe UI',Roboto,Oxygen, //Window, Android, KDE
   Ubuntu,Cantarell,'Fira Sans', //Ubuntu, Gnome, Firefox OS
-  'Open Sans','Droid Sans','Helvetica Neue',sans-serif //Old
+  'Open Sans','Droid Sans','Helvetica Neue',sans-serif; //Old
+  font-size: 16px;
 }
 
-.logo {
-  width: 397px;
-  height: 84px;
-  object-fit: contain;
+.font-format{
+  font-family: HelveticaNeue;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
 }
-#hero {
-  background-color: #252525;
+
+.hero {
+  background-color: var(--bgColor);
+  position: relative;
   .parallax{
     min-height: 100vh;
     background-image: url(../../images/bg-home.png);
@@ -28,10 +36,33 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
   }
-  &_title{
-    color: #fff;
+  &__logo {
+    width: 397px;
+    height: 84px;
+    object-fit: contain;
+    position: fixed;
+    top:40%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &__title{
+    position: fixed;
+    font-size: calc(48px + (110 - 48) * (100vw - 320px) / (1920 - 320));
+    top:53%;
+    left: 50%;
+    transform: translateX(-50%);
+    @extend .font-format;
+    line-height: 1.02;
+    letter-spacing: 0.9px;
+    white-space: nowrap;
   }
 }
-#main{
-
+.main{
+  background-color: var(--bgColor);
+  &__title{
+    @extend .font-format;
+    text-align: center;
+    font-size: 4.5 rem;
+    padding-top: 7.875rem;
+  }
 }
