@@ -3,3 +3,13 @@
 //@prepros-prepend ../../node_modules/bootstrap/dist/js/bootstrap.bundle.js
 
 AOS.init();
+
+$(window).on("scroll", function () {
+  var scrollHeight = $(window).height();
+  var scrollPosition = $(window).scrollTop() + 60;
+  if (scrollPosition > scrollHeight) {
+    $('.navGrid').addClass('active');
+  } else {
+    $('.navGrid').removeClass('active');
+  }
+});
