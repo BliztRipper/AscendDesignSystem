@@ -1,10 +1,14 @@
 extends _template
 block body
+  nav
+    .navGrid
+      .navGrid__logo
+        img.img-fluid(src='images/logo.png')
   section.hero
     .parallax
-      img.img-fluid.hero__logo(src="images/logo.png", alt="Logo", srcset="images/logo@2x.png 2x,images/logo@3x.png 3x")
       header
         h1.hero__title Design Sprint
+        h2.hero__subtitle by cx team
   section.main
     .container
       h2.main__title What is ASCEND Design Sprint?
