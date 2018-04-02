@@ -5,18 +5,24 @@ block body
       .navGrid__logo
         img.img-fluid(src='images/logo.png')
       .navGrid__menu 
-      .navGrid__menu Home
-      .navGrid__menu Design Sprint 
-      .navGrid__menu Process 
-      .navGrid__menu Stakeholders 
-      .navGrid__menu About Us 
-      .navGrid__menu  
-  section.hero
+      .navGrid__menu-1
+        a.active(href='#hero') Home
+      .navGrid__menu-2
+        a(href='#main') Design Sprint  
+      .navGrid__menu-3
+        a(href='#process') Process
+      .navGrid__menu-4
+        a(href='') Stakeholders  
+      .navGrid__menu-5
+        a(href='') About Us 
+      .navGrid__menu 
+        //- img(src='images/social.svg') 
+  section.hero#hero
     .parallax
       header
         h1.hero__title Design Sprint
         h2.hero__subtitle by cx team
-  section.main
+  section.main#main
     .container
       h2.main__title What is ASCEND Design Sprint?
       hr
@@ -58,5 +64,5 @@ block body
             h2.sprint__title User Testing
           .col-md-6.col-12.sprint__image
             img.img-fluid(src="images/test.svg", alt="User Testing")
-  section.process
+  section.process#process
     .container
