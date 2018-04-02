@@ -38,7 +38,7 @@ hr{
   width: 100%;
   display: grid;
   grid-auto-rows: 4rem;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   z-index: 10;
   transition: 200ms;
   &.active{
@@ -47,8 +47,15 @@ hr{
   &__logo{
     display: flex;
     align-items: center;
+    justify-content: center;
   }
-  &__menu{&-1,&-2,&-3,&-4,&-5{
+  &__menu {
+    &-1,
+    &-2,
+    &-3,
+    &-4,
+    &-5,
+    &-6 {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -180,3 +187,5 @@ hr{
   z-index: 2;
   height: 800px;
 }
+
+@import './_responsive';

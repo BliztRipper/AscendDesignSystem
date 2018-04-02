@@ -10,6 +10,7 @@ $(window).on("scroll", function () {
   var sprintHeight = $('.main').innerHeight() + $('.sprint').innerHeight(); //1927
   var scrollOne = $(window).scrollTop() + navHeight;
   var scrollTwo = $(window).scrollTop() + sprintHeight + navHeight;
+  
   if (scrollOne > scrollHeight) {
     $('.navGrid').addClass('active');
     $('.navGrid').find('a').removeClass('active');
