@@ -2,9 +2,6 @@
 //@prepros-prepend ../../node_modules/aos/dist/aos.js
 //@prepros-prepend ../../node_modules/bootstrap/dist/js/bootstrap.bundle.js
 
-AOS.init();
-
-
 $(document).ready(function(e) {
   $(window).on("scroll", function () {
     var scrollHeight = $(window).height(); //847
@@ -20,14 +17,14 @@ $(document).ready(function(e) {
       $('.navGrid').find('a').removeClass('active');
       $('.navGrid__menu-2').find('a').addClass('active');
     }else if (scrollTop > settop) {
-      $('.navGrid').find('a').removeClass('active');
-      $('.navGrid__menu-3').find('a').addClass('active');
+      // $('.navGrid').addClass('active');
+      // $('.navGrid').find('a').removeClass('active');
+      // $('.navGrid__menu-3').find('a').addClass('active');
+      console.log('YESSSSS');
     } else{
       $('.navGrid').removeClass('active');
       $('.navGrid').find('a').removeClass('active');
       $('.navGrid__menu-1').find("a").addClass('active');
     }
   });
-})
-
-
+});
