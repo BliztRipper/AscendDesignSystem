@@ -3,3 +3,11 @@
 //@prepros-prepend ../../node_modules/bootstrap/dist/js/bootstrap.bundle.js
 
 AOS.init();
+
+$('.navGrid__offMenu').click(function(){
+  $('.offCanvas').addClass('active')
+})
+
+$('.offCanvas__close ').click(function(){
+  $('.offCanvas').removeClass('active')
+})
