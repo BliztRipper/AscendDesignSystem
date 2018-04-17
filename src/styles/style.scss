@@ -46,6 +46,7 @@ hr{
   transition: 200ms;
   &__offMenu{
     align-self: center;
+    width: 32px;
   }
   &__logo{
     align-self: center;
@@ -54,7 +55,7 @@ hr{
   &__about{
     color:#fff;
     align-self: center;
-    justify-self: center;
+    justify-self: end;
   }
 }
 
@@ -75,13 +76,13 @@ hr{
     height: 50vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     flex-direction: column;
     &__title{
       font-size: calc(24px + (150 - 24) * (100vw - 320px) / (1920 - 320));
       text-transform: uppercase;
       @extend .font-format;
-      line-height: 1.02;
+      line-height: 1;
       letter-spacing: 0.9px;
       white-space: nowrap;
     }
@@ -94,6 +95,10 @@ hr{
       font-style: normal;
       font-stretch: normal;
       letter-spacing: 0.3px;
+      line-height: 1;
+    }
+    &__image{
+      margin-top: -10px;
     }
   }
 }
