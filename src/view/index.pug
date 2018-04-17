@@ -2,73 +2,14 @@ extends _template
 block body
   nav
     .navGrid
+      .navGrid__offMenu
+        img.img-fluid(src="images/Menu-new.png", alt="", srcset="")
       .navGrid__logo
-        img.img-fluid(src='images/logo.png')
-      .navGrid__menu 
-      .navGrid__menu-1
-        a.active(href='#hero') Home
-      .navGrid__menu-2
-        a(href='#main') Design Sprint  
-      .navGrid__menu-3
-        a(href='#process') Process
-      .navGrid__menu-4
-        a(href='#stake') Stakeholders  
-      .navGrid__menu-5
-        a(href='#about') About Us 
-      .navGrid__menu-6 
-        img(src='images/social.svg') 
+      .navGrid__about
   section.hero#hero
     .parallax
       header
-        h1.hero__title Design Sprint
-        h2.hero__subtitle by cx team
+        h1.hero__title Design
+        h2.hero__subtitle Sprint
   section.main#main
-    .container
-      h2.main__title What is ASCEND Design Sprint?
-      hr
-      p.main__paragraph Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.?
-  section.sprint
-    .container
-      article
-        .row.py-5
-          .col-md-6.col-12.sprint__line
-            .sprint__day DAY 1
-            h2.sprint__title Empathize
-            p.sprint__content Curabitur lobortis id lorem id bibendum.Ut id consectetur magna. Quisque volutpat augue 
-          .col-md-6.col-12.sprint__image
-            img.img-fluid(src="images/empathize.svg", alt="Empathize")
-      article
-        .row.py-5
-          .col-md-6.col-12
-            .sprint__day DAY 2
-            h2.sprint__title UX Wireframe
-            p.sprint__content Curabitur lobortis id lorem id bibendum.Ut id consectetur magna. Quisque volutpat augue 
-          .col-md-6.col-12.order-md-first.sprint__image.sprint__line
-            img.img-fluid(src="images/wireframe.svg", alt="UX Wireframe")
-      article
-        .row.py-5
-          .col-md-6.col-12.sprint__line
-            .sprint__day DAY 3
-            h2.sprint__title User Interface
-            p.sprint__content Curabitur lobortis id lorem id bibendum.Ut id consectetur magna. Quisque volutpat augue 
-          .col-md-6.col-12.sprint__image
-            img.img-fluid(src="images/interface.svg", alt="User Interface")
-      article
-        .row.py-5
-          .col-md-6.col-12
-            .sprint__day DAY 4
-            h2.sprint__title  UI & Prototype
-            p.sprint__content Curabitur lobortis id lorem id bibendum.Ut id consectetur magna. Quisque volutpat augue 
-          .col-md-6.col-12.order-md-first.sprint__image.sprint__line
-            img.img-fluid(src="images/prototype.svg", alt="UI & Prototype")
-      article
-        .row.py-5
-          .col-md-6.col-12.sprint__line
-            .sprint__day DAY 5
-            h2.sprint__title User Testing
-            p.sprint__content Curabitur lobortis id lorem id bibendum.Ut id consectetur magna. Quisque volutpat augue 
-          .col-md-6.col-12.sprint__image
-            img.img-fluid(src="images/test.svg", alt="User Testing")
-  section.process#process
-    .container
-      h1.process__title process
+    
