@@ -1,6 +1,8 @@
 @import '../../node_modules/bootstrap/scss/bootstrap';
 @import '../../node_modules/aos/dist/aos';
 
+/*Global*/
+
 :root{
   --mainColor: #ee4036;
   --secondColor: #751B19;
@@ -68,6 +70,7 @@ hr{
   z-index: 20;
   background-color: #fff;
   transition: 300ms;
+  overflow: scroll;
   &__close{
     padding: 1rem;
     cursor: pointer;
@@ -78,7 +81,7 @@ hr{
     padding: 0;
     position: relative;
     left:20%;
-    top:10vh;
+    top:0;
   }
   &__list{
     line-height: 5;
@@ -127,8 +130,9 @@ hr{
   }
 }
 
+/*Home*/
+
 .hero {
-  background-color: var(--bgColor);
   position: relative;
   z-index: 0;
   height: 100vh;
@@ -139,7 +143,7 @@ hr{
   background-attachment: fixed;
   background-position: center top;
   background-repeat: no-repeat;
-    background-size: cover;
+  background-size: cover;
   .header{
     height: 35vh;
     display: flex;
@@ -197,4 +201,69 @@ hr{
   text-align: center;
   padding: 1rem 0;
 }
+
+/*Empathize*/
+.empathize{
+  position: relative;
+  z-index: 0;
+  height: 100vh;
+  overflow: hidden;
+  background-image: image-set(url(../../images/BG-1.png) 1x,url(../../images/BG-1@2x.png) 2x);
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__intro{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: calc(48px + (150 - 24) * (100vw - 320px) / (1920 - 320));
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.3px;
+    line-height: 0.5;
+  }
+  &__title{
+    font-size: calc(24px + (100 - 24) * (100vw - 320px) / (1920 - 320));
+    text-transform: uppercase;
+    @extend .font-format;
+    letter-spacing: 0.9px;
+    white-space: nowrap;
+    text-align: right;
+    line-height: 2;
+    margin: 0;
+  }
+  &__subtitle{
+    text-transform: uppercase;
+    text-align: right;
+    color: #fff;
+    font-size: 1.375rem;
+    font-weight: 100;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.3px;
+    line-height: 1.2;
+  }
+  &__imageWrapper {
+    position: relative;
+  }
+  &__image{
+    position: absolute;
+    top: 24%;
+    left: -5%;
+    &--sub{
+      position: relative;
+      z-index: 2;
+      left: 35%;
+      bottom: 50px;
+    }
+  }
+}
+
 @import './_responsive';

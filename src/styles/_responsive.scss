@@ -1,0 +1,27 @@
+@media(max-width:1024px){
+  .offCanvas{
+    width: 100%;
+  }
+  .empathize{
+    &__title{
+      text-align: center;
+      font-weight: lighter;
+    }
+    &__subtitle{
+      text-align: center;
+      font-size: 0.875rem;
+      font-weight: 100;
+    }
+    &__image{
+      max-width: 640px;
+      left: -50%;
+      &--sub{
+        position: absolute;
+        max-width: 250px;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-30%);
+      }
+    }
+  } 
+}
