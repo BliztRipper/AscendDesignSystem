@@ -250,12 +250,9 @@ hr{
     letter-spacing: 0.3px;
     line-height: 1.2;
   }
-  &__imageWrapper {
-    position: relative;
-  }
   &__image{
     position: absolute;
-    top: 24%;
+    top: -50%;  
     left: -5%;
     &--sub{
       position: relative;

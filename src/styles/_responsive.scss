@@ -1,4 +1,28 @@
-@media(max-width:1024px){
+@media(max-width:1370px){
+  .empathize{
+    &__title{
+      text-align: center;
+      font-weight: lighter;
+    }
+    &__subtitle{
+      text-align: center;
+      font-weight: 100;
+    }
+    &__image{
+      max-width: 1200px;
+      top: 80px;
+      &--sub{
+        position: absolute;
+        max-width: 500px;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-30%);
+      }
+    }
+  } 
+}
+
+@media(max-width:767px){
   .offCanvas{
     width: 100%;
   }
@@ -14,6 +38,7 @@
     }
     &__image{
       max-width: 640px;
+      top:-100%;
       left: -50%;
       &--sub{
         position: absolute;
