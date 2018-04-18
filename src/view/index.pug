@@ -1,30 +1,6 @@
 extends _template
 block body
-  nav
-    .navGrid
-      .navGrid__offMenu
-        img.img-fluid(src="images/Menu-new.png" alt="Mobile Menu", srcset="")
-      .navGrid__logo
-        img.img-fluid.mx-auto.d-block(alt="Logo" src="images/logo.png" srcset="images/logo.png 1x, images/logo@2x.png 2x")
-      .navGrid__about
-        span About Us
-  .offCanvas
-    .offCanvas__close  
-      img(src="images/close.png" alt="Mobile Menu", srcset="")
-    nav
-      ul.offCanvas__menu
-        a.offCanvas__list(href='')
-          li EMPHATIZE 
-        a.offCanvas__list(href='')
-          li IDEATION UX   
-        a.offCanvas__list(href='')
-          li IDEATION UI  
-        a.offCanvas__list(href='')
-          li PROTOTYPE 
-        a.offCanvas__list(href='')
-          li TESTING
-        a.offCanvas__list(href='')
-          li STAKEHOLDER  
+  include _nav
   section.hero
     .container
       .col-12
@@ -33,7 +9,6 @@ block body
           h2.header__subtitle(data-aos="fade-down")  Sprint
         img.header__image(data-aos="zoom-in" alt="Logo" src="images/home.png" srcset="images/home.png 1x, images/home@2x.png 2x")
         button.btn.btn-link.header__button.mx-auto.d-block(data-aos="fade-right" data-aos-offset='0' data-aos-delay='500') Discover
-        footer.footer.fixed-bottom © 2018 True Money Co. Ltd. All Rights Reserved.
-  //- section.main
+  footer.footer.fixed-bottom © 2018 True Money Co. Ltd. All Rights Reserved.
     
     
