@@ -50,11 +50,17 @@ hr{
     align-self: center;
     width: 32px;
     cursor: pointer;
+    img{
+      transition: 200ms;
+      &:hover{
+        transform-origin: center center;
+        transform: rotate(90deg);
+      }
+    }
   }
   &__logo{
     align-self: center;
     justify-self: center;
-    width: 70%;
   }
   &__about{
     color:#fff;
@@ -143,7 +149,7 @@ hr{
     url(../../images/BG@2x.png) 2x
   );
   background-attachment: fixed;
-  background-position: center top;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   .header{
@@ -284,6 +290,7 @@ hr{
   &__content{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
     margin-top: 5rem;
     text-align: left;
     grid-gap: 1rem;
@@ -293,6 +300,13 @@ hr{
     font-size: 1.375rem;
     font-weight: 100;
   } 
+  &__list{
+    padding-left: 0;
+    color:#fff;
+    font-size: 1.375rem;
+    font-weight: 100;
+    list-style-position: inside;
+  }
 }
 
 #offEmpathize{
