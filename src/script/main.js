@@ -11,3 +11,17 @@ $('.navGrid__offMenu').click(function(){
 $('.offCanvas__close ').click(function(){
   $('.offCanvas').removeClass('active')
 })
+
+$('#triggerEmpathize').click(function(){
+  $('#offEmpathize').addClass('active')
+  $('html, body').animate({
+    scrollTop: $(".empathizeInfo").offset().top
+  }, 800);
+})
+
+$('#offEmpathize').click(function(){
+  $(this).removeClass('active')
+  $('html, body').animate({
+    scrollTop: $('.empathize').offset().top
+  }, 800);
+})
