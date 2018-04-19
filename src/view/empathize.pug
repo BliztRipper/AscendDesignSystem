@@ -2,16 +2,17 @@ extends _template
 block body
   -var empathize = 'active';
   include _nav
-  section.empathize
+  section.empathize(data-aos="fade-up" data-aos-duration='200')
     .container
       .col-12
-        .empathize__intro(data-aos="fade-right") DAY 1      
+        .empathize__intro(data-aos="fade-right" data-aos-delay='200') DAY 1      
         header
-          h1.empathize__title(data-aos="fade-left") EMPATHIZE
+          h1.empathize__title(data-aos="fade-left" data-aos-delay='300') EMPATHIZE
           .row
             .col-12.col-xl-6
             .col-12.col-xl-6 
-              p.empathize__subtitle(data-aos="fade-up") Welcome to your resource for planning and running a Google design sprint. 
-            .col-12
+              p.empathize__subtitle(data-aos="fade-up" data-aos-delay='400') Welcome to your resource for planning and running a Google design sprint.
+            .col-12(data-aos="zoom-in" data-aos-delay='500')
               img.empathize__image(src='images/empathize.png')         
-              img.empathize__image--sub(src='images/empathize-1.png')     
+              img.empathize__image--sub(src='images/empathize-1.png') 
+  .fixed-bottom.explore.animated.pulse.infinite(data-aos="fade-zoom-in" data-aos-offset='0' data-aos-delay='800')  Empathize
