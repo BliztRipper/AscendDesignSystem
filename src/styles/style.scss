@@ -245,16 +245,24 @@ hr{
   background-size: cover;
   opacity: 1;
   transition: 300ms;
+  &__grid-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 2rem;
+    &__inner-grid{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: minmax(30px, 1fr);
+    }
+  }
   &__intro{
-    height: 30vh;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex-direction: column;
+    padding-top: 120px;
+    display: block;
+    font-size: calc(48px + (150 - 24) * (100vw - 320px) / (1920 - 320));
     white-space: nowrap;
     text-transform: uppercase;
     color: #fff;
-    font-size: calc(48px + (150 - 24) * (100vw - 320px) / (1920 - 320));
+    text-align: center;
     font-weight: 900;
     font-style: normal;
     font-stretch: normal;
@@ -263,17 +271,14 @@ hr{
   }
   &__title{
     font-size: calc(24px + (100 - 24) * (100vw - 320px) / (1920 - 320));
-    text-transform: uppercase;
     @extend .font-format;
     letter-spacing: 0.9px;
     white-space: nowrap;
-    text-align: right;
-    line-height: 2;
+    text-align: left;
     margin: 0;
   }
   &__subtitle{
-    text-transform: uppercase;
-    text-align: right;
+    text-align: left;
     color: #fff;
     font-size: 1.375rem;
     font-weight: 100;
