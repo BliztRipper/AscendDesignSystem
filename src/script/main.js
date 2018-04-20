@@ -25,3 +25,10 @@ $('#offEmpathize').click(function(){
     scrollTop: $('.empathize').offset().top
   }, 800);
 })
+
+$('.navGrid__offMenu').on("click", function() {
+  var el = $('.navGrid__offMenu--text');
+  el.text() == el.data("text-swap") 
+    ? el.text(el.data("text-original")) 
+    : el.text(el.data("text-swap"));
+});
