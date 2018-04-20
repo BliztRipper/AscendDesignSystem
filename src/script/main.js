@@ -5,7 +5,7 @@
 AOS.init();
 
 $('.navGrid__offMenu').click(function(){
-  $('.offCanvas').addClass('active')
+  $('.offCanvas').toggleClass('active')
 })
 
 $('.offCanvas__close ').click(function(){

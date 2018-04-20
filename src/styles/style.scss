@@ -48,14 +48,35 @@ hr{
   transition: 200ms;
   &__offMenu{
     align-self: center;
-    width: 32px;
+    width: 120px; 
     cursor: pointer;
-    img{
-      transition: 200ms;
-      &:hover{
-        transform-origin: center center;
-        transform: rotate(90deg);
+    transition: 300ms;
+    background-color: transparent;
+    &:hover{
+      background-color: rgba(150, 150, 150, 0.439);
+      border-radius: 50px;
+      .navGrid__offMenu{
+        &--img{
+          transform-origin: center center;
+          transform: rotate(90deg);
+        }
+        &--text{
+          left: 70px;
+          opacity: 1;
+        }
       }
+    }
+    &--img{
+      transition: 200ms;
+    }
+    &--text{
+      position: absolute;
+      color:#fff;
+      top:50%;
+      transform: translateY(-50%);
+      left: 0;
+      opacity: 0;
+      transition: 300ms;
     }
   }
   &__logo{
@@ -88,8 +109,8 @@ hr{
     margin: 0;
     padding: 0;
     position: relative;
+    margin-top: 3rem;
     left:20%;
-    top:0;
   }
   &__list{
     line-height: 5;

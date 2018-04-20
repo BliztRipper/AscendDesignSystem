@@ -37,6 +37,12 @@
   .offCanvas{
     width: 100%;
   }
+  .navGrid__offMenu{
+    width: 50px;
+    &--text{
+      display: none;
+    }
+  }
   .empathize{
     &__title{
       text-align: center;
