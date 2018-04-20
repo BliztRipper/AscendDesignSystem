@@ -39,6 +39,11 @@
   }
   .navGrid__offMenu{
     width: 50px;
+    &:hover{
+      .navGrid__offMenu--img{
+        transform: none;
+      }
+    }
     &--text{
       display: none;
     }
