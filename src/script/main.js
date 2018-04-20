@@ -28,7 +28,5 @@ $('#offEmpathize').click(function(){
 
 $('.navGrid__offMenu').on("click", function() {
   var el = $('.navGrid__offMenu--text');
-  el.text() == el.data("text-swap") 
-    ? el.text(el.data("text-original")) 
-    : el.text(el.data("text-swap"));
+  el.text() == el.data("text-swap") ? el.text(el.data("text-original")) : el.text(el.data("text-swap"));
 });
