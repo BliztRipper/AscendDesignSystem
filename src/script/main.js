@@ -13,8 +13,11 @@ $('.offCanvas__close').click(function(){
   $('.offCanvas').removeClass('active')
 })
 
-$('button.btn.header__button.mx-auto.d-block').click(function(e){
-  $('section.hero').addClass('animated fadeOutLeft')
+$('button.btn.header__button.mx-auto.d-block').click(function(){
+  $('body').addClass('animated fadeOutLeft');
+  setTimeout(function() {
+    window.location.href='empathize.html';
+  }, 750);
 })
 
 $('#triggerEmpathize').click(function(){
