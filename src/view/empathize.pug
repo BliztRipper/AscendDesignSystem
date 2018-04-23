@@ -2,29 +2,31 @@ extends _template
 block body
   -var empathize = 'active';
   include _nav
-  section.empathize(data-aos="fade-up" data-aos-duration='200')
+  section.empathize.animated.fadeInRight
     .container
       .col-12
         .empathize__intro(data-aos="fade-right" data-aos-delay='200') DAY 1      
       .empathize__grid-content
         .empathize__grid-content--col-1
-          img.img-fluid(src='images/empathize.png')
+            img.img-fluid.empathize__image(src='images/Groupem-1.png')
         .empathize__grid-content--col-2
           .empathize__grid-content__inner-grid
             header.empathize__grid-content__inner-grid--row-1
               h1.empathize__title(data-aos="fade-left" data-aos-delay='300') Empathize
-              p.empathize__subtitle(data-aos="fade-up" data-aos-delay='400') Welcome to your resource for planning <br/>and running a Google design sprint.      
+              p.empathize__subtitle(data-aos="fade-up" data-aos-delay='400') Welcome to your resource for planning <br/>and running a Google design sprint.
+          .empathize__grid-content__inner-grid--row-2 
+            .swipeDown Swipe Down for More  
     .fixed-bottom.explore#triggerEmpathize(data-aos="fade-zoom-in" data-aos-offset='0' data-aos-delay='800')  Empathize
-  //- section.empathizeInfo
-  //-   .container
-  //-     .col-12
-  //-       h1.empathize__intro(data-aos="fade-right" data-aos-delay='300') Empathize
-  //-     .empathizeInfo__content(data-aos="zoom-out-up" data-aos-delay='400')
-  //-       .empathizeInfo__paragraph         
-  //-       p.empathizeInfo__paragraph Simple and smart, the Fib hooks tell just enough white lies to hang your coat on. Made from durable stamped steel and turned solid beech wood, Fib is an updated take on the traditional wall hook and comes in a range of colours suited to any home.       
-  //-       .empathizeInfo__paragraph 
-  //-       ul.empathizeInfo__list
-  //-         li Simple and smart, the Fib hooks tell just enough white lies to hang your coat on.
-  //-         li Made from durable stamped steel and turned solid beech wood
-  //-         li Fib is an updated take on the traditional wall hook and comes in a range of colours suited to any home.
-  //-   .fixed-bottom.explore#offEmpathize(data-aos="fade-zoom-in" data-aos-offset='0' data-aos-delay='800')  Back
+  section.empathizeInfo
+    .container
+      .col-12
+        h1.empathize__intro(data-aos="fade-right" data-aos-delay='300') Empathize
+      .empathizeInfo__content(data-aos="zoom-out-up" data-aos-delay='400')
+        .empathizeInfo__paragraph         
+        p.empathizeInfo__paragraph Simple and smart, the Fib hooks tell just enough white lies to hang your coat on. Made from durable stamped steel and turned solid beech wood, Fib is an updated take on the traditional wall hook and comes in a range of colours suited to any home.       
+        .empathizeInfo__paragraph 
+        ul.empathizeInfo__list
+          li Simple and smart, the Fib hooks tell just enough white lies to hang your coat on.
+          li Made from durable stamped steel and turned solid beech wood
+          li Fib is an updated take on the traditional wall hook and comes in a range of colours suited to any home.
+    .fixed-bottom.explore#offEmpathize(data-aos="fade-zoom-in" data-aos-offset='0' data-aos-delay='800')  Back

@@ -1,15 +1,20 @@
 //@prepros-prepend ../../node_modules/jquery/dist/jquery.min.js
 //@prepros-prepend ../../node_modules/aos/dist/aos.js
-//@prepros-prepend ../../node_modules/bootstrap/dist/js/bootstrap.bundle.js
+//@prepros-prepend ../../node_modules/bootstrap/dist/js/bootstrap.bundle.js   
 
 AOS.init();
+
 
 $('.navGrid__offMenu').click(function(){
   $('.offCanvas').toggleClass('active')
 })
 
-$('.offCanvas__close ').click(function(){
+$('.offCanvas__close').click(function(){
   $('.offCanvas').removeClass('active')
+})
+
+$('button.btn.header__button.mx-auto.d-block').click(function(e){
+  $('section.hero').addClass('animated fadeOutLeft')
 })
 
 $('#triggerEmpathize').click(function(){

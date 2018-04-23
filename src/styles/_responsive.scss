@@ -1,23 +1,10 @@
 @media(max-width:1370px){
   .empathize{
     &__title{
-      text-align: center;
       font-weight: lighter;
     }
     &__subtitle{
-      text-align: center;
       font-weight: 100;
-    }
-    &__image{
-      max-width: 1200px;
-      top: 80px;
-      &--sub{
-        position: absolute;
-        max-width: 500px;
-        top: 100%;
-        left: 50%;
-        transform: translateX(-30%);
-      }
     }
   } 
   .empathizeInfo{
@@ -61,13 +48,29 @@
         order:1;
       }
     }
+    &__title{
+      font-weight: lighter;
+      text-align: center;
+    }
     &__subtitle{
+      font-weight: 300;
+      text-align: center;
       br{
         display: none;
       }
     }
+    &__image{
+      transform: translate(0);
+      left: 0;
+    }
   }
   #triggerEmpathize,#offEmpathize{
     display: none;
+  }
+  .swipeDown{
+    display: block;
+    color:#fff;
+    text-align: center;
+    font-weight: 100
   }
 }

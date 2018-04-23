@@ -20,6 +20,7 @@ body{
   margin: 0; height: 100%; overflow: hidden
 }
 
+
 hr{
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -288,15 +289,10 @@ hr{
     line-height: 1.2;
   }
   &__image{
+    transform: translateX(-50%);
     position: absolute;
-    top: -50%;  
-    left: -5%;
-    &--sub{
-      position: relative;
-      z-index: 2;
-      left: 35%;
-      bottom: 50px;
-    }
+    bottom: 0;
+    left: 40%;
   }
   &.explored{
     opacity: 0;
@@ -353,7 +349,9 @@ hr{
     left: 0;
   }
 }
-
+.swipeDown{
+  display: none;
+}
 .explore{
   display: block;
   text-align: center;
@@ -366,7 +364,6 @@ hr{
   border-radius: 2rem;
   width: 180px;
   cursor: pointer;
-  
 }
 
 @import './_responsive';
