@@ -52,6 +52,10 @@
       font-weight: lighter;
       text-align: center;
     }
+    &__title-ex{
+      font-weight: lighter;
+      text-align: center;
+    }
     &__subtitle{
       font-weight: 300;
       text-align: center;
@@ -72,5 +76,20 @@
     color:#fff;
     text-align: center;
     font-weight: 100
+  }
+
+  .next-page{
+    top: 2rem;
+    bottom: unset;
+    right: 1rem;
+    padding: 5px 5px;
+    width: 70px;
+    background-color: #F9C254;
+  }
+}
+
+@media(max-width:320px){
+  .ideation__image{
+    max-width: 80%;
   }
 }

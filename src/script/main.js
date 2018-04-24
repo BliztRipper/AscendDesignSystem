@@ -20,6 +20,13 @@ $('button.btn.header__button.mx-auto.d-block').click(function(){
   }, 750);
 })
 
+$('.next-page').click(function(){
+  $('body').addClass('animated fadeOutLeft');
+  setTimeout(function() {
+    window.location.href='ideation.html';
+  }, 750);
+})
+
 $('#triggerEmpathize').click(function(){
   $('#offEmpathize').addClass('active')
   $('html, body').animate({
