@@ -34,6 +34,20 @@ $('.gotoDay3').click(function(){
   }, 750);
 })
 
+$('.gotoDay4').click(function(){
+  $('body').addClass('animated fadeOutLeft');
+  setTimeout(function() {
+    window.location.href='prototype.html';
+  }, 750);
+})
+
+$('.gotoDay5').click(function(){
+  $('body').addClass('animated fadeOutLeft');
+  setTimeout(function() {
+    window.location.href='test.html';
+  }, 750);
+})
+
 $('#triggerEmpathize').click(function(){
   $('#offEmpathize').addClass('active')
   $('html, body').animate({

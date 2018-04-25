@@ -367,7 +367,7 @@ hr{
   overflow: hidden;
   background-image: image-set(url(../../images/BG-2.png) 1x,url(../../images/BG-2@2x.png) 2x);
   background-attachment: fixed;
-  background-position: center top;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 1;
@@ -387,7 +387,7 @@ hr{
   overflow: hidden;
   background-image: image-set(url(../../images/BG-3.png) 1x,url(../../images/BG-3@2x.png) 2x);
   background-attachment: fixed;
-  background-position: center top;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 1;
@@ -405,6 +405,29 @@ hr{
       max-width: 70%;
       height: auto;
     }
+  }
+}
+
+/*User Interface*/
+.prototype{
+  position: relative;
+  z-index: 0;
+  height: 100vh;
+  overflow: hidden;
+  background-image: image-set(url(../../images/BG-4.png) 1x,url(../../images/BG-4@2x.png) 2x);
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  transition: 300ms;
+  &__image{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    max-width: 800px;
+    height: auto;
+    width: 100%;
   }
 }
 
@@ -426,8 +449,6 @@ hr{
 }
 
 .gotoDay{
-  &2{
-    background-color: #F9C254;
     position: absolute;
     right: 2rem;
     bottom: 1rem;
@@ -437,18 +458,21 @@ hr{
     padding: 1rem 1rem;
     color:#fff;
     text-align: center;
+  &2{
+    @extend .gotoDay;
+    background-color: #F9C254;
   }
   &3{
+    @extend .gotoDay;
     background-color: #68AC7F;
-    position: absolute;
-    right: 2rem;
-    bottom: 1rem;
-    border-radius: 2rem;
-    width: 100px;
-    cursor: pointer;
-    padding: 1rem 1rem;
-    color:#fff;
-    text-align: center;
+  }
+  &4{
+    @extend .gotoDay;
+    background-color: #21639D;
+  }
+  &5{
+    @extend .gotoDay;
+    background-color: #0E223D;
   }
 }
 
