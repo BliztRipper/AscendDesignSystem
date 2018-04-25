@@ -20,10 +20,17 @@ $('button.btn.header__button.mx-auto.d-block').click(function(){
   }, 750);
 })
 
-$('.gotoDay3').click(function(){
+$('.gotoDay2').click(function(){
   $('body').addClass('animated fadeOutLeft');
   setTimeout(function() {
     window.location.href='user-experience.html';
+  }, 750);
+})
+
+$('.gotoDay3').click(function(){
+  $('body').addClass('animated fadeOutLeft');
+  setTimeout(function() {
+    window.location.href='user-interface.html';
   }, 750);
 })
 

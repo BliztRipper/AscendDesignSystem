@@ -394,8 +394,17 @@ hr{
   transition: 300ms;
   &__image{
     position: absolute;
-    bottom: 0;
+    bottom: -40px;
     left: 0;
+    max-width: 1200px;
+    width: 100%;
+    height: auto;
+    &--sub{
+      position: absolute;
+      bottom: 0;
+      max-width: 70%;
+      height: auto;
+    }
   }
 }
 
@@ -416,17 +425,31 @@ hr{
   cursor: pointer;
 }
 
-.gotoDay3{
-  position: absolute;
-  right: 2rem;
-  bottom: 1rem;
-  background-color: #F9C254;
-  border-radius: 2rem;
-  width: 100px;
-  cursor: pointer;
-  padding: 1rem 1rem;
-  color:#fff;
-  text-align: center;
+.gotoDay{
+  &2{
+    background-color: #F9C254;
+    position: absolute;
+    right: 2rem;
+    bottom: 1rem;
+    border-radius: 2rem;
+    width: 100px;
+    cursor: pointer;
+    padding: 1rem 1rem;
+    color:#fff;
+    text-align: center;
+  }
+  &3{
+    background-color: #68AC7F;
+    position: absolute;
+    right: 2rem;
+    bottom: 1rem;
+    border-radius: 2rem;
+    width: 100px;
+    cursor: pointer;
+    padding: 1rem 1rem;
+    color:#fff;
+    text-align: center;
+  }
 }
 
 @import './_responsive';
