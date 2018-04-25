@@ -20,10 +20,10 @@ $('button.btn.header__button.mx-auto.d-block').click(function(){
   }, 750);
 })
 
-$('.next-page').click(function(){
+$('.gotoDay3').click(function(){
   $('body').addClass('animated fadeOutLeft');
   setTimeout(function() {
-    window.location.href='ideation.html';
+    window.location.href='user-experience.html';
   }, 750);
 })
 
