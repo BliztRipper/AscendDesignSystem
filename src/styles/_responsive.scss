@@ -77,15 +77,30 @@
     text-align: center;
     font-weight: 100
   }
-
-  .next-page{
+  .gotoDay{
+    position: absolute;
+    right: 1rem;
     top: 2rem;
     bottom: unset;
-    right: 1rem;
-    padding: 5px 5px;
+    border-radius: 2rem;
     width: 70px;
-    background-color: #F9C254;
+    cursor: pointer;
+    padding: 5px 5px;
+    color:#fff;
+    text-align: center;
     z-index: 11;
+    &2{
+      background-color: #F9C254;
+    }
+    &3{
+      background-color: #68AC7F;
+    }
+    &4{
+      background-color: #21639D;
+    }
+    &5{
+      background-color: #0E223D;
+    }
   }
 }
 
