@@ -381,17 +381,8 @@ hr{
 
 /*User Interface*/
 .interface{
-  position: relative;
-  z-index: 0;
-  height: 100vh;
-  overflow: hidden;
+  @extend .ideation;
   background-image: image-set(url(../../images/BG-3.png) 1x,url(../../images/BG-3@2x.png) 2x);
-  background-attachment: fixed;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 1;
-  transition: 300ms;
   &__image{
     position: absolute;
     bottom: -40px;
@@ -408,19 +399,10 @@ hr{
   }
 }
 
-/*User Interface*/
+/*Prototype*/
 .prototype{
-  position: relative;
-  z-index: 0;
-  height: 100vh;
-  overflow: hidden;
+  @extend .ideation;
   background-image: image-set(url(../../images/BG-4.png) 1x,url(../../images/BG-4@2x.png) 2x);
-  background-attachment: fixed;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 1;
-  transition: 300ms;
   &__image{
     position: absolute;
     left: 0;
@@ -430,7 +412,19 @@ hr{
     width: 100%;
   }
 }
-
+/*Testing*/
+.testing{
+  @extend .ideation;
+  background-image: image-set(url(../../images/BG-5.png) 1x,url(../../images/BG-5@2x.png) 2x);
+  &__image{
+    position: absolute;
+    right: 40%;
+    bottom: 0;
+    max-width: 800px;
+    height: auto;
+    width: 100%;
+  }
+}
 .swipeDown{
   display: none;
 }

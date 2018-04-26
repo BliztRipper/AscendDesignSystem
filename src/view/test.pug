@@ -1,0 +1,20 @@
+extends _template
+block body
+  -var test = 'active';
+  include _nav
+  section.testing.animated.fadeInRight
+    .container
+      .col-12
+        .empathize__intro(data-aos="fade-right" data-aos-delay='400') DAY 5      
+      .empathize__grid-content
+        .empathize__grid-content--col-1
+            img.testing__image(src='images/test.png' data-aos="fade-up" data-aos-delay='800')
+        .empathize__grid-content--col-2
+          .empathize__grid-content__inner-grid 
+            header.empathize__grid-content__inner-grid--row-1
+              h1.empathize__title(data-aos="fade-left" data-aos-delay='600') TESTING
+              p.empathize__subtitle(data-aos="fade-up" data-aos-delay='600') Welcome to your resource for planning <br/>and running a Google design sprint.
+          .empathize__grid-content__inner-grid--row-2 
+            .swipeDown Swipe Down for More   
+    .fixed-bottom.explore#triggerEmpathize(data-aos="fade-zoom-in" data-aos-offset='0' data-aos-delay='800')  User Interface
+  .gotoDay6 Next  
