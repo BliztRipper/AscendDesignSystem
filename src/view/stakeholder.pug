@@ -5,12 +5,36 @@ block body
   section.stakeholder.animated.fadeInRight
     .container
       header.stakeholder__header
-        h1.stakeholder__header--main DESIGN SPRINT
-        h2.stakeholder__header--sub STAKEHOLDERS
-      .gridTemplate
-        .gridItem  
-        .gridItem  
-        .gridItem  
-        .gridItem  
-        .gridItem  
-        .gridItem  
+        h1.stakeholder__header--main(data-aos="fade-up" data-aos-delay='600') DESIGN SPRINT
+        h2.stakeholder__header--sub(data-aos="fade-down" data-aos-delay='600') STAKEHOLDERS
+      .stakeholder__gridTemplate
+        .gridItem(data-aos="zoom-in" data-aos-delay='800') 
+          .gridCell
+            .gridCell__title 1  UX
+            .gridCell__position RESEARCHER
+            .gridCell__detail note as ‘UXR’  
+        .gridItem(data-aos="zoom-in" data-aos-delay='800') 
+          .gridCell
+            .gridCell__title 1  UX
+            .gridCell__position DESIGNER
+            .gridCell__detail note as ‘UXD’  
+        .gridItem(data-aos="zoom-in" data-aos-delay='800') 
+          .gridCell
+            .gridCell__title 1  UI
+            .gridCell__position DESIGNER
+            .gridCell__detail note as ‘UID’  
+        .gridItem(data-aos="zoom-in" data-aos-delay='800') 
+          .gridCell
+            .gridCell__title 1  PRORTOTYPE
+            .gridCell__position
+            .gridCell__detail note as ‘PROTO’   
+        .gridItem(data-aos="zoom-in" data-aos-delay='800') 
+          .gridCell
+            .gridCell__title 1  PL
+            .gridCell__position
+            .gridCell__detail note as ‘PL’   
+        .gridItem(data-aos="zoom-in" data-aos-delay='800') 
+          .gridCell
+            .gridCell__title 1  BL 1  TL
+            .gridCell__position
+            .gridCell__detail *if they cannot come they need to send ‘representative’   

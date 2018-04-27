@@ -450,6 +450,51 @@ hr{
       line-height: 0.8;
     }
   }
+  &__gridTemplate{
+    padding-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+    .gridItem{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .gridCell{
+        &__title{
+          color:#fff;
+          font-size: 2.25rem;
+          position: relative;
+          font-weight: 600;
+          text-align: center;
+          &::after{
+            content:'';
+            position: absolute;
+            top:4px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 100%;
+            width: 40px;
+            border-bottom: #ED3124 8px solid;
+          }
+        }
+        &__position,&__detail{
+          text-align: center;
+          color:#fff;
+          padding-top: 1rem;
+        }
+      }
+      &:nth-child(2),
+      &:nth-child(5) {
+        border-left: #5B5B5B solid 1px;
+        border-right: #5B5B5B solid 1px;
+      }
+      &:nth-child(1),
+      &:nth-child(2), 
+      &:nth-child(3), { 
+        border-bottom: #5B5B5B solid 1px;
+      }
+    }
+  }
 }
 
 .swipeDown{
