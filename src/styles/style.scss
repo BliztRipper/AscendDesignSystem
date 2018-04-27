@@ -433,19 +433,19 @@ hr{
   background-color: #333;
   position: relative;
   z-index: 0;
-  height: 100vh;
+  height: 100%;
   &__header{
     padding-top: 150px;
     color:#fff;
     text-align: center;
     &--main{
-      font-size: calc(14px + (36 - 14) * (100vw - 320px) / (1920 - 320));
+      font-size: calc(32px + (36 - 32) * (100vw - 320px) / (1920 - 320));
       font-weight: 200;
       margin-bottom: 0;
       line-height: 1;
     }
     &--sub{
-      font-size: calc(14px + (72 - 14) * (100vw - 320px) / (1920 - 320));
+      font-size: calc(32px + (72 - 32) * (100vw - 320px) / (1920 - 320));
       font-weight: bold;
       line-height: 0.8;
     }
