@@ -48,6 +48,13 @@ $('.gotoDay5').click(function(){
   }, 750);
 })
 
+$('.gotoDay6').click(function(){
+  $('body').addClass('animated fadeOutLeft');
+  setTimeout(function() {
+    window.location.href='stakeholder.html';
+  }, 750);
+})
+
 $('#triggerEmpathize').click(function(){
   $('#offEmpathize').addClass('active')
   $('html, body').animate({
