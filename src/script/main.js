@@ -1,5 +1,3 @@
-//@prepros-prepend pwabuilder-sw-register.js
-//@prepros-prepend pwabuilder-sw.js
 //@prepros-prepend ../../node_modules/jquery/dist/jquery.min.js
 //@prepros-prepend ../../node_modules/jquery/dist/jquery.min.js
 //@prepros-prepend ../../node_modules/aos/dist/aos.js
