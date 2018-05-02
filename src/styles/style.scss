@@ -546,5 +546,20 @@ hr{
     background-color: #333;
   }
 }
+.backto{
+    position: absolute;
+    left: 2rem;
+    bottom: 1rem;
+    border-radius: 2rem;
+    width: 100px;
+    cursor: pointer;
+    padding: 1rem 1rem;
+    color:#fff;
+    text-align: center;
+  &1,&2,&3,&4,&5 {
+    @extend .backto;
+     background-color: #5B5B5B;
+  }
+}
 
 @import './_responsive';

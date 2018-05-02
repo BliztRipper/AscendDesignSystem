@@ -55,6 +55,37 @@ $('.gotoDay6').click(function(){
   }, 750);
 })
 
+$('.backto1').click(function(){
+  $('body').addClass('animated fadeOutDown');
+  setTimeout(function() {
+    window.location.href ='empathize.html';
+  }, 750);
+})
+$('.backto2').click(function(){
+  $('body').addClass('animated fadeOutDown');
+  setTimeout(function() {
+    window.location.href = 'user-experience.html';
+  }, 750);
+})
+$('.backto3').click(function(){
+  $('body').addClass('animated fadeOutDown');
+  setTimeout(function() {
+    window.location.href = 'user-interface.html';
+  }, 750);
+})
+$('.backto4').click(function(){
+  $('body').addClass('animated fadeOutDown');
+  setTimeout(function() {
+    window.location.href = 'prototype.html';
+  }, 750);
+})
+$('.backto5').click(function(){
+  $('body').addClass('animated fadeOutDown');
+  setTimeout(function() {
+    window.location.href = 'test.html';
+  }, 750);
+})
+
 $('#triggerEmpathize').click(function(){
   $('#offEmpathize').addClass('active')
   $('html, body').animate({
