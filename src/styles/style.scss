@@ -395,7 +395,7 @@ hr{
     &--sub{
       position: absolute;
       bottom: 0;
-      right: calc(30% * (100vw - 320px) / (1920 - 320));
+      right: calc(0 + (30% - 0) * (100vw - 320px) / (1920 - 320));
       max-width: 70%;
       height: auto;
     }
